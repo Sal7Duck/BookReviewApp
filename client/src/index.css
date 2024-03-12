@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+    padding: 0;
+    /* background-color: rgb(65, 82, 4); */
+    display: flex;
+    justify-content: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: url("components/darkLibrary.jpeg");
+    background-size: 100%;
+}
+
+/* .app{
+    justify-content: space-between;
+} */
+
+.loading {
+    color: white;
+}
+
+.app {
+    /* Add your general styles here */
+    transition: filter 0.3s ease; /* Transition for the blur effect */
+}
+  
+.blur {
+    filter: blur(5px); /* Adjust the blur amount as needed */
+    pointer-events: none; /* Allow clicks to pass through the blurred background */
+}
+
+.app-title {
+    /* background-color: rgb(148, 211, 86); */
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 3rem;
+    background: linear-gradient(
+      90deg,
+      rgb(0, 0, 0) 50%,
+      rgba(249, 211, 180, 0) 100%
+    );
+    border: solid black;
+}
+
+.app-title h1 {
+    font-weight: 800;
+    line-height: 75px;
+    letter-spacing: -2.48px;
+    font-size: 62px;
+    color: white;
+}
+
+.app-title h2 {
+    color: white;
+}
+
+.search-bar {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 30px;
+}
+
+.search-bar select{
+    height: 35px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(172, 172, 172);
+}
+
+.search-bar input{
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(213, 213, 213);
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+}
+
+.button-container button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    font-size: 10px;
+    border-radius: 12px;
+    background-color: black;
+    color: beige;
+}
+
+/* List Header */
+
+.list-header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-bottom: rgba(0,0,0,0.05) 1px solid;
+}
+
+.tile-container {
+    width: 100%;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.book-tile-content {
+    color: antiquewhite;
+    justify-content: center;
+    width: 330px;
+    height: 400px;
+    margin: 1.5rem;
+    display: flex;
+    overflow: hidden;
+    border: solid;
+    background-color: rgb(74, 0, 0);
+    box-shadow: 0px 13px 10px -7px rgba(29, 29, 29, 0.4);
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    border: none;
+}
+
+h1 {
+    font-size: 3rem;
+    letter-spacing: 0.9px;
+    justify-content: center;
+}
+
+.book-cover {
+    justify-content: center;
+    display: flex;
+    padding: 5px;
+    border-radius: 3px;
+    border-color: rgb(148, 211, 86);
+}
+
+img {
+    justify-content: center;
+    margin-top: 10px;
+    height: 50%;
+    width: 50%;
+    display: flex;
+} 
+
+.book-tile-info {
+    justify-content: center;
+    width: 50%;
+    margin: auto;
+}
+
